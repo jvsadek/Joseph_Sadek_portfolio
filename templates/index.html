@@ -1,0 +1,880 @@
+{% from "bootstrap5/form.html" import render_form %}
+{% block content %}
+<!DOCTYPE html>
+<!--[if lt IE 8 ]>
+<html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+    <!--- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Joseph Sadek eCV</title>
+    <meta name="description" content="This is my CV website for recruiters and connection to reach out">
+    <meta name="author" content="Joseph Sadek">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="./static/css/default.css">
+    <link rel="stylesheet" href="./static/css/layout.css">
+    <link rel="stylesheet" href="./static/css/media-queries.css">
+    <link rel="stylesheet" href="./static/css/magnific-popup.css">
+
+    <!-- Script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="/static/css/font-awesome/js//solid.js"></script>
+    <script defer src="./static/css/font-awesome/js/brands.js"></script>
+
+    <!-- add the core fontawesome.js file -->
+    <script defer src="./static/css/font-awesome/js/fontawesome.js"></script>
+
+    <!-- support v4 icon references/syntax for SVG+JS -->
+    <script defer src="./static/css/font-awesome/js/v4-shims.js"></script>
+
+
+    <!-- Favicons
+     ================================================== -->
+    <link rel="shortcut icon" href="./favicon.png">
+
+</head>
+
+<body>
+
+<!-- Header
+================================================== -->
+<header id="home">
+
+    <nav id="nav-wrap">
+
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+        <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+            <li><a class="smoothscroll" href="#call-to-action">Testimonials</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+        </ul> <!-- end #nav -->
+
+    </nav> <!-- end #nav-wrap -->
+
+    <div class="row banner">
+        <div class="banner-text">
+            <h1 class="responsive-headline">Nice to meet you! I'm Joseph Sadek.</h1>
+            <h3>I'm a Dubai based <span>mechanical engineer</span>, <span>aerospace engineering M.Sc.</span> and <span>sales professional</span>
+                with passion for the energy sector
+                and dedication for a sustainable future. Let's <a class="smoothscroll" href="#resume">findout more!,</a>
+                and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr/>
+            <ul class="social">
+                <!--               <li><a href=""><i class="fa fa-facebook"></i></a></li>-->
+                <li><a href="https://twitter.com/JosephSadek11" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <!--               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+                <li><a href="https://www.linkedin.com/in/sadekjoseph/" target="_blank"><i
+                        class="fa fa-linkedin"></i></a></li>
+                <!--               <li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
+                <!--               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>-->
+                <!--               <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
+                <li><a href="https://github.com/jvsadek" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="scrolldown">
+        <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+    </p>
+
+</header> <!-- Header End -->
+
+
+<!-- About Section
+================================================== -->
+<section id="about">
+
+    <div class="row">
+
+        <div class="three columns">
+
+            <img class="profile-pic" src="./static/images/profilepic.jpg" alt=""/>
+
+        </div>
+
+        <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>I grew up in the beautiful city of <span> Aswan, south of Egypt</span>, where the one of the world's
+                largest embankment dams is standing, Aswan High Dam.
+                I completed by <span>Bachelor of Science (B.Sc.) in Mechanical Engineering</span> from <span>the American University in Cairo</span>
+                with Summa Cum Laude, specializing in Power Generation and Mechanical Design.
+                After which, I moved to <span>Stockholm</span>, to join the <span>Master's programme in Turbomachinery Aeromechanical University Training</span>.
+                It was a joint program between four universities KTH Sweden, DUKE USA, ULg Belgium and AUTH Greece.
+                I chose the track at <span>Université de Liège, Liège</span>, Belgium before completing my M.Sc. thesis
+                project with <span>Siemens Energy AB (formly Siemens Turbomachinery AB)</span>.
+                Then I started my professional career journey, with Siemens Energy Middle East, in <span>Dubai</span>
+                through their talent program (SGP). Since then, I accomplished rich professional knowledge in <span>Sales, Business Development & Contract Negotiations</span>
+                through the various projects either in Utilises Industry or in Distributed Generation and Oil & Gas.
+            </p>
+
+            <div class="row">
+
+                <div class="columns contact-details">
+
+                    <h2>Contact Details</h2>
+                    <p class="address">
+                        <span>Joseph Sadek</span><br>
+                        <span>Skyline 12, Majan<br>
+						         Dubai, the United Arab Emirates
+                     </span><br>
+                        <span>(+971)56-5118 147</span><br>
+                        <span>j.v.sadek@gmail..com</span>
+                    </p>
+
+                </div>
+
+                <div class="columns download">
+                    <p>
+                        <a href="{{ url_for('download_resume') }}" class="button"><i class="fa fa-download"></i>Download
+                            Resume</a>
+                    </p>
+                </div>
+
+            </div> <!-- end row -->
+
+        </div> <!-- end .main-col -->
+
+    </div>
+
+</section> <!-- About Section End-->
+
+
+<!-- Resume Section
+================================================== -->
+<section id="resume">
+
+    <!-- Work
+   ----------------------------------------------- -->
+    <div class="row work">
+
+        <div class="three columns header-col">
+            <h1><span>Experience</span></h1>
+        </div>
+
+        <div class="nine columns main-col">
+
+            <div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3><a href="https://www.siemens-energy.com/global/en/home.html" target="_blank">Siemens Energy</a>
+                    </h3>
+                    <p class="info">Sales Manager<span>&bull;</span> <em class="date">Nov 2021 - Present</em></p>
+                    <p>
+                        Similar to your car, the large machinery equipment used to generate electricity &#9889;, i.e.
+                        gas turbines, steam turbine, compressors & electric generators, require maintenance after
+                        certain number of operational hours &#8986;,
+                        instead of kilometers &#128517;; in my role, I lead multicultural & cross countries regional
+                        team &#127757; to define the best service program for our Customer equipment.
+                    </p>
+
+                    <p class="info">Bid Manager<span>&bull;</span> <em class="date">March 2016 - Nov 2021</em></p>
+                    <p>
+                        I did the exact same job as above, with the exception that I was mainly responsible for
+                        technical bidding of the project &#128526;.
+                    </p>
+
+                </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3><a href="https://www.siemens.com/" target="_blank">Siemens</a></h3>
+                    <p class="info">Simulation Engineer in Compressor Performance and Aeromechanics <span>&bull;</span>
+                        <em class="date">Feb 2015 - July 2015</em></p>
+
+                    <p>
+                        In this experience, I applied what I have learnt in the Master's programme, by utilizing
+                        Computational Fluid Dynamics (CFD) 💻 codes and software
+                        to simulate thermodynamics and aeromechanical performance of <a
+                            href="https://www.siemens-energy.com/global/en/home/products-services/product/sgt-750.html"
+                            target="_blank">Siemens
+                        Energy Gas Turbine (SGT-750)</a>.
+                        If such topics interests you, take a look at my <a
+                            href="https://drive.google.com/file/d/111Sho5NA2b7hPB7IBkE7dVm57d-gmOwp/view?usp=sharing"
+                            target="_blank">Thesis</a>.
+                    </p>
+
+                </div>
+
+            </div> <!-- item end -->
+
+        </div> <!-- main-col end -->
+
+    </div> <!-- End Work -->
+
+
+    <!-- Education
+    ----------------------------------------------- -->
+    <div class="row education">
+
+        <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+        </div>
+
+        <div class="nine columns main-col">
+
+            <div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3><a href="https://www.kth.se/en" target="_blank">KTH Royal Institute of Technology</a></h3>
+                    <p class="info">M.Sc. Degree in Turbomachinery Aeromechanics <span>&bull;</span> <em class="date">Sept.
+                        2013 - June 2015</em>
+                    </p>
+
+                    <p>
+                        During this two years Master's programme, I applied the different principles of Turbomachinery
+                        design, for power generation in combine cycle plants and aerospace engineering.
+                    </p>
+
+                </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3><a href="https://www.aucegypt.edu/" target="_blank">The American University in Cairo </a></h3>
+                    <p class="info" target="_blank"><a
+                            href="https://www.aucegypt.edu/academics/undergraduate-programs/mechanical-engineering"
+                            target="_blank">Bachelor of Science in Mechanical Engineering </a><span>&bull;</span> <em
+                            class="date">Sept 2008 - June 2013</em></p>
+
+                    <p>
+                        I studied the main principals of mechanical engineering and specialized in power generation and
+                        mechanical design.
+                    </p>
+
+                </div>
+
+            </div> <!-- item end -->
+
+        </div> <!-- main-col end -->
+
+    </div> <!-- End Education -->
+
+
+    <!-- Skills
+    ----------------------------------------------- -->
+    <div class="row skill">
+
+        <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+        </div>
+
+        <div class="nine columns main-col">
+
+            <p> In either of the above professional or educational experience I have gained plenty of the following
+                skills.
+            </p>
+
+            <div class="bars">
+
+                <ul class="skills">
+                    <li><span class="bar-expand sales"></span><em>Sales and Marketing</em></li>
+                    <li><span class="bar-expand business_dev"></span><em>Business Development</em></li>
+                    <li><span class="bar-expand data_analysis"></span><em>Data Analytics</em></li>
+                    <li><span class="bar-expand python"></span><em>Python</em></li>
+                    <li><span class="bar-expand jinja"></span><em>Jinja</em></li>
+                    <li><span class="bar-expand css"></span><em>CSS</em></li>
+                    <li><span class="bar-expand html5"></span><em>HTML5</em></li>
+
+                </ul>
+
+            </div><!-- end skill-bars -->
+
+        </div> <!-- main-col end -->
+
+    </div> <!-- End skills -->
+
+</section> <!-- Resume Section End-->
+
+
+<!-- Portfolio Section
+================================================== -->
+<section id="portfolio">
+
+    <div class="row">
+
+        <div class="twelve columns collapsed">
+
+            <h1>Check Out Some of My Projects.</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+                <div class="columns portfolio-item">
+                    <div class="item-wrap">
+
+                        <a target="_blank" href="https://github.com/jvsadek/Stocks_Whatsapp_notifier" title="">
+                            <img alt="" src="./static/images/portfolio/trading.jpg">
+                            <div class="overlay">
+                                <div class="portfolio-item-meta">
+                                    <h5>Trading</h5>
+                                    <p>Python, Whatsapp API, yfinance</p>
+                                </div>
+                            </div>
+                            <div class="link-icon"><i class="icon-plus"></i></div>
+                        </a>
+
+                    </div>
+                </div> <!-- item end -->
+
+                <div class="columns portfolio-item">
+                    <div class="item-wrap">
+
+                        <a target="_blank" href="https://github.com/jvsadek/Coursera-Machine-Learning" title="">
+                            <img alt="" src="./static/images/portfolio/Machine_learning.jpg">
+                            <div class="overlay">
+                                <div class="portfolio-item-meta">
+                                    <h5>Machine Learning</h5>
+                                    <p>Coursera, Matlab</p>
+                                </div>
+                            </div>
+                            <div class="link-icon"><i class="icon-plus"></i></div>
+                        </a>
+
+                    </div>
+                </div> <!-- item end -->
+
+                <div class="columns portfolio-item">
+                    <div class="item-wrap">
+
+                        <a href="#modal-03" title="Python 100 days bootcamp">
+                            <img alt="" src="./static/images/portfolio/Pythoon_100_days_magic.jpg">
+                            <div class="overlay">
+                                <div class="portfolio-item-meta">
+                                    <h5>Development</h5>
+                                    <p>Python, HTML, CSS</p>
+                                </div>
+                            </div>
+                            <div class="link-icon"><i class="icon-plus"></i></div>
+                        </a>
+
+                    </div>
+                </div> <!-- item end -->
+
+                <div class="columns portfolio-item">
+                    <div class="item-wrap">
+                        <a target="_blank" href="https://youtu.be/tyzSSQ-oEN0?feature=shared"
+                           title="RC Hovercraftprototype">
+                            <img alt="" src="./static/images/portfolio/Hovercraft_project.png">
+                            <!--                            <iframe width="400" height="400" src="https://www.youtube.com/embed/tyzSSQ-oEN0?si=1B0n2gu5ityBmYBR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+                            <div class="overlay">
+                                <div class="portfolio-item-meta">
+                                    <h5>Engineering Design</h5>
+                                    <p>CFD, Fluid-dynamics</p>
+                                </div>
+                            </div>
+                            <div class="link-icon"><i class="icon-plus"></i></div>
+                        </a>
+
+                    </div>
+                </div> <!-- item end -->
+
+                <!--                <div class="columns portfolio-item">-->
+                <!--                    <div class="item-wrap">-->
+
+                <!--                        <a href="#modal-05" title="">-->
+                <!--                            <img alt="" src="./static/images/portfolio/farmerboy.jpg">-->
+                <!--                            <div class="overlay">-->
+                <!--                                <div class="portfolio-item-meta">-->
+                <!--                                    <h5>Farmer Boy</h5>-->
+                <!--                                    <p>Branding</p>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
+                <!--                        </a>-->
+
+                <!--                    </div>-->
+                <!--                </div> &lt;!&ndash; item end &ndash;&gt;-->
+
+                <!--                <div class="columns portfolio-item">-->
+                <!--                    <div class="item-wrap">-->
+
+                <!--                        <a href="#modal-06" title="">-->
+                <!--                            <img alt="" src="./static/images/portfolio/girl.jpg">-->
+                <!--                            <div class="overlay">-->
+                <!--                                <div class="portfolio-item-meta">-->
+                <!--                                    <h5>Girl</h5>-->
+                <!--                                    <p>Photography</p>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
+                <!--                        </a>-->
+
+                <!--                    </div>-->
+                <!--                </div> &lt;!&ndash; item end &ndash;&gt;-->
+
+                <!--                <div class="columns portfolio-item">-->
+                <!--                    <div class="item-wrap">-->
+
+                <!--                        <a href="#modal-07" title="">-->
+                <!--                            <img alt="" src="./static/images/portfolio/origami.jpg">-->
+                <!--                            <div class="overlay">-->
+                <!--                                <div class="portfolio-item-meta">-->
+                <!--                                    <h5>Origami</h5>-->
+                <!--                                    <p>Illustrration</p>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
+                <!--                        </a>-->
+
+                <!--                    </div>-->
+                <!--                </div> &lt;!&ndash; item end &ndash;&gt;-->
+
+                <!--                <div class="columns portfolio-item">-->
+                <!--                    <div class="item-wrap">-->
+
+                <!--                        <a href="#modal-08" title="">-->
+                <!--                            <img alt="" src="./static/images/portfolio/retrocam.jpg">-->
+                <!--                            <div class="overlay">-->
+                <!--                                <div class="portfolio-item-meta">-->
+                <!--                                    <h5>Retrocam</h5>-->
+                <!--                                    <p>Web Development</p>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                            <div class="link-icon"><i class="icon-plus"></i></div>-->
+                <!--                        </a>-->
+
+                <!--                    </div>-->
+                <!--                </div>  &lt;!&ndash; item end &ndash;&gt;-->
+
+            </div> <!-- portfolio-wrapper end -->
+
+        </div> <!-- twelve columns end -->
+
+
+        <!--        &lt;!&ndash; Modal Popup-->
+        <!--         -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; &ndash;&gt;-->
+
+        <!--        <div id="modal-01" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Coffee Cup</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-01 End &ndash;&gt;-->
+
+        <!--        <div id="modal-02" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Console</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-02 End &ndash;&gt;-->
+
+        <!--        <div id="modal-03" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Judah</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Branding</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-03 End &ndash;&gt;-->
+
+        <!--        <div id="modal-04" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Into the Light</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Photography</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-04 End &ndash;&gt;-->
+
+        <!--        <div id="modal-05" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Farmer Boy</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-05 End &ndash;&gt;-->
+
+        <!--        <div id="modal-06" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Girl</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Photography</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-06 End &ndash;&gt;-->
+
+        <!--        <div id="modal-07" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Origami</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-07 End &ndash;&gt;-->
+
+        <!--        <div id="modal-08" class="popup-modal mfp-hide">-->
+
+        <!--            <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt=""/>-->
+
+        <!--            <div class="description-box">-->
+        <!--                <h4>Retrocam</h4>-->
+        <!--                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi-->
+        <!--                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+        <!--                <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>-->
+        <!--            </div>-->
+
+        <!--            <div class="link-box">-->
+        <!--                <a href="http://www.behance.net" target="_blank">Details</a>-->
+        <!--                <a class="popup-modal-dismiss">Close</a>-->
+        <!--            </div>-->
+
+        <!--        </div>&lt;!&ndash; modal-01 End &ndash;&gt;-->
+
+
+    </div> <!-- row End -->
+
+</section> <!-- Portfolio Section End-->
+
+
+<!-- Call-To-Action Section
+================================================== -->
+<section id="call-to-action">
+
+    <div class="row">
+
+        <div class="two columns header-col">
+
+<!--                        <h1><span>Get Hosting.</span></h1>-->
+                        <i class="fa-solid fa-award fa-8x" style="color: #ffffff;"></i>
+
+
+        </div>
+
+        <div class="seven columns">
+
+<!--            <h2><span class="lead">Unde Omnis Iste</span></h2>-->
+<!--            <p><span class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,-->
+<!--            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. </span></p>-->
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7038820183234277376" height="400" width="800" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
+
+        <div class="three columns action">
+
+
+        </div>
+
+    </div>
+
+</section> <!-- Call-To-Action Section End-->
+
+
+<!-- Testimonials Section
+================================================== -->
+<section id="testimonials">
+
+    <div class="text-container">
+
+        <div class="row">
+
+            <div class="two columns header-col">
+
+<!--                <h1><span>Client Testimonials</span></h1>-->
+            <i class="fa-solid fa-quote-left fa-8x" style="color: #ffffff;"></i>
+            </div>
+
+            <div class="ten columns flex-container">
+
+                <div class="flexslider">
+
+                    <ul class="slides">
+
+                        <li>
+
+                            <blockquote>
+                                <p>Change is the only constant..
+                                </p>
+                                <cite>Heraclitus</cite>
+                            </blockquote>
+                        </li> <!-- slide ends -->
+
+                        <li>
+                            <blockquote>
+                                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                                    aliquet.
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
+                                    sagittis sem
+                                    nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                </p>
+                                <cite>Mr. Adobe</cite>
+                            </blockquote>
+                        </li> <!-- slide ends -->
+
+                    </ul>
+
+                </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+        </div> <!-- row ends -->
+
+    </div>  <!-- text-container ends -->
+
+</section> <!-- Testimonials Section End-->
+
+
+<!-- Contact Section
+================================================== -->
+<section id="contact">
+
+    <div class="row section-head">
+
+        <div class="two columns header-col">
+
+<!--            <h1><span>Get In Touch.</span></h1>-->
+            <i class="fa-brands fa-whatsapp fa-8x" style="color: #ffffff;"></i>
+
+        </div>
+
+        <div class="ten columns">
+
+            <p class="lead">It was a pleasure you were surfing through my website! I would like to hear more from you, so please, leave your message.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="eight columns">
+
+            {{render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+
+<!--            &lt;!&ndash; form &ndash;&gt;-->
+<!--            <form action="" method="post" id="contactForm" name="contactForm">-->
+<!--                <fieldset>-->
+
+<!--                    <div>-->
+<!--                        <label for="contactName">Name <span class="required">*</span></label>-->
+<!--                        <input type="text" value="" size="35" id="contactName" name="contactName">-->
+<!--                    </div>-->
+
+<!--                    <div>-->
+<!--                        <label for="contactEmail">Email <span class="required">*</span></label>-->
+<!--                        <input type="text" value="" size="35" id="contactEmail" name="contactEmail">-->
+<!--                    </div>-->
+
+<!--                    <div>-->
+<!--                        <label for="contactSubject">Subject</label>-->
+<!--                        <input type="text" value="" size="35" id="contactSubject" name="contactSubject">-->
+<!--                    </div>-->
+
+<!--                    <div>-->
+<!--                        <label for="contactMessage">Message <span class="required">*</span></label>-->
+<!--                        <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>-->
+<!--                    </div>-->
+
+<!--                    <div>-->
+<!--                        <button class="submit">Submit</button>-->
+<!--                        <span id="image-loader">-->
+<!--                        <img alt="" src="images/loader.gif">-->
+<!--                     </span>-->
+<!--                    </div>-->
+
+<!--                </fieldset>-->
+<!--            </form> &lt;!&ndash; Form End &ndash;&gt;-->
+
+            <!-- contact-warning -->
+            <div id="message-warning"> Error boy</div>
+            <!-- contact-success -->
+            <div id="message-success">
+                <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+            </div>
+
+        </div>
+
+
+        <aside class="four columns footer-widgets">
+
+            <div class="widget widget_contact">
+
+                <h4>Address and Phone</h4>
+                <p class="address">
+                    Joseph Sadek<br>
+                    Skyline 12, Dubai <br>
+                    the United Arab Emirates<br>
+                    <span>(+971)56-5118 147</span><br>
+                    <span>j.v.sadek@gmail.com</span>
+                </p>
+
+            </div>
+
+            <div class="widget widget_tweets">
+
+                <h4 class="widget-title">Latest updates</h4>
+
+                <ul id="twitter">
+                    <li>
+                        <img class="profile-pic" src="https://scontent.ffjr1-1.fna.fbcdn.net/v/t39.30808-6/414332344_10161079397151357_818209435449156640_n.jpg?stp=dst-jpg_p843x403&_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=hjLRyQaCNbsAX8gbdYr&_nc_ht=scontent.ffjr1-1.fna&oh=00_AfDzk0F1tNbqCJ51Wy7Q75o3KvwVWvao5CaVkBJQ7yIUJg&oe=65A07595" alt=""/>
+
+<!--                        <span>-->
+<!--                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.-->
+<!--                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum-->
+<!--                        <a href="#">http://t.co/CGIrdxIlI3</a>-->
+<!--                        </span>-->
+<!--                        <b><a href="#">2 Days Ago</a></b>-->
+                    </li>
+                    <li>
+                        <span>
+                            We are waiting for our first baby child 👪 to arrive safely! If you would like to send us a small gift, here is our Amazon baby registry;
+
+                        <a href="https://www.amazon.com/baby-reg/joseph-sadek-february-2024-dubai/3GOF3P5RD9WJ4?ref_=cm_sw_r_cp_ud_dp_NTJT8FQVE8MMYHWXDDQ5" target="_blank">http://Amazon.ae</a>
+                        </span>
+                        <b><a href="#">Dec. 2023</a></b>
+                    </li>
+                </ul>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</section> <!-- Contact Section End-->
+
+
+<!-- footer
+================================================== -->
+<footer>
+
+    <div class="row">
+
+        <div class="twelve columns">
+
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/J.V.Sadek" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/JosephSadek11" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<!--                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+                <li><a href="https://www.linkedin.com/in/sadekjoseph/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/JOSEPHSADEK/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.threads.net/@josephsadek" target="_blank"><i class="fa-brands fa-threads"></i></a></li>
+<!--                <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
+            </ul>
+
+            <ul class="copyright">
+                <li>&copy; Copyright 2014 CeeVee</li>
+                <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+    </div>
+
+</footer> <!-- Footer End-->
+
+<!-- Java Script
+================================================== -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/waypoints.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/magnific-popup.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+
+</html>
+{% endblock %}
