@@ -772,7 +772,14 @@
 <!--            </form> &lt;!&ndash; Form End &ndash;&gt;-->
 
             <!-- contact-warning -->
-            <div id="message-warning"> Error boy</div>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <div id="message-warning"> {{message}}</div>
+            % endfor %}
+            {% endif %}
+            {% endwith %}
+<!--            <div id="message-warning"> Error boy</div>-->
             <!-- contact-success -->
             <div id="message-success">
                 <i class="fa fa-check"></i>Your message was sent, thank you!<br>
