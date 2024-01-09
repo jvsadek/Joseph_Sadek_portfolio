@@ -8,14 +8,14 @@ from flask_ckeditor import CKEditor, CKEditorField
 import os
 
 app = Flask(__name__)
-# app.config['SECRET_KEY']=  os.environ.get('FLASK_KEY')
-app.config['SECRET_KEY']= '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY']=  os.environ.get('FLASK_KEY')
+# app.config['SECRET_KEY']= '$2y$10$pDdusVebcpKMV0t2FkVr0eui6/9JInSSW31kkcbqm6zLY1LiqwNxG'
 ckeditor = CKEditor(app)
 Bootstrap5(app)
 
 # CONNECT TO DB
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_URI", "sqlite:///messages.db")
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///messages.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_URI", "sqlite:///messages.db")
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///messages.db'
 
 
 db = SQLAlchemy()
@@ -49,20 +49,25 @@ def main_page():
         # Check if user email is already present in the database.
         result = db.session.execute(db.select(Contact).where(Contact.email == form.email.data))
         user = result.scalar()
-        if user:
+        if  user:
             # User already send message
             flash("You've already sent me a message, I will get back ASAP!")
             return redirect(url_for('main_page'))
+            # render_template("index.html", form=form)
+        else:
+            # User already send message
+            flash("Thank you for your message, I will get back ASAP!")
+            # return redirect(url_for('main_page'))
+            new_message = Contact(
+                email=form.email.data,
+                name=form.name.data,
+                subject = form.subject.data,
+                message = form.message.data,
+            )
+            db.session.add(new_message)
+            db.session.commit()
+            return redirect(url_for("main_page"))
 
-        new_message = Contact(
-            email=form.email.data,
-            name=form.name.data,
-            subject = form.subject.data,
-            message = form.message.data,
-        )
-        db.session.add(new_message)
-        db.session.commit()
-        return redirect(url_for("main_page"))
     return render_template("index.html", form=form)
 
 @app.route('/download')

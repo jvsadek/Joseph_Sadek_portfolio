@@ -734,7 +734,14 @@
     <div class="row">
 
         <div class="eight columns">
-
+                        <!-- contact-warning -->
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <div id="message-success"> {{message}}</div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
             {{render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
 
 <!--            &lt;!&ndash; form &ndash;&gt;-->
@@ -771,19 +778,12 @@
 <!--                </fieldset>-->
 <!--            </form> &lt;!&ndash; Form End &ndash;&gt;-->
 
-            <!-- contact-warning -->
-            {% with messages = get_flashed_messages() %}
-            {% if messages %}
-            {% for message in messages %}
-            <div id="message-warning"> {{message}}</div>
-            {% endfor %}
-            {% endif %}
-            {% endwith %}
+
 <!--            <div id="message-warning"> Error boy</div>-->
             <!-- contact-success -->
-            <div id="message-success">
-                <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-            </div>
+<!--            <div id="message-success">-->
+<!--                <i class="fa fa-check"></i>Your message was sent, thank you!<br>-->
+<!--            </div>-->
 
         </div>
 
