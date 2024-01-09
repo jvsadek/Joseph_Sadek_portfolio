@@ -16,5 +16,5 @@ HTML5 template at [styleshout](https://styleshout.com/). I deployed the website 
 I completed this portfolio website, as one of the assignments in professional [Python 100 Days bootcamp](https://www.udemy.com/course/100-days-of-code/) by [Dr. Angela Yu](https://github.com/angelabauer).
 
 ### Quick Start
-- Static version at [GitHub Pages]()
+- Static version at [GitHub Pages](https://jvsadek.github.io/Joseph_Sadek_portfolio/)
 - Dynamic version at [Render hosted](https://portfolio-website-d1x4.onrender.com)
