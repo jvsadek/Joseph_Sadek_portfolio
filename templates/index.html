@@ -631,22 +631,26 @@
 
         <div class="two columns header-col">
 
-<!--                        <h1><span>Get Hosting.</span></h1>-->
-                        <i class="fa-solid fa-award fa-8x" style="color: #ffffff;"></i>
+            <!--                        <h1><span>Get Hosting.</span></h1>-->
+            <i class="fa-solid fa-award fa-8x" style="color: #ffffff;"></i>
 
 
         </div>
 
         <div class="seven columns">
 
-<!--            <h2><span class="lead">Unde Omnis Iste</span></h2>-->
-<!--            <p><span class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,-->
-<!--            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. </span></p>-->
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7038820183234277376" height="400" width="800" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+            <!--            <h2><span class="lead">Unde Omnis Iste</span></h2>-->
+            <!--            <p><span class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,-->
+            <!--            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. </span></p>-->
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7038820183234277376" height="400"
+                    width="800" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
         </div>
 
         <div class="three columns action">
-
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                        allowfullscreen></iframe>
+            </div>
 
         </div>
 
@@ -665,8 +669,8 @@
 
             <div class="two columns header-col">
 
-<!--                <h1><span>Client Testimonials</span></h1>-->
-            <i class="fa-solid fa-quote-left fa-8x" style="color: #ffffff;"></i>
+                <!--                <h1><span>Client Testimonials</span></h1>-->
+                <i class="fa-solid fa-quote-left fa-8x" style="color: #ffffff;"></i>
             </div>
 
             <div class="ten columns flex-container">
@@ -717,14 +721,15 @@
 
         <div class="two columns header-col">
 
-<!--            <h1><span>Get In Touch.</span></h1>-->
+            <!--            <h1><span>Get In Touch.</span></h1>-->
             <i class="fa-brands fa-whatsapp fa-8x" style="color: #ffffff;"></i>
 
         </div>
 
         <div class="ten columns">
 
-            <p class="lead">It was a pleasure you were surfing through my website! I would like to hear more from you, so please, leave your message.
+            <p class="lead">It was a pleasure you were surfing through my website! I would like to hear more from you,
+                so please, leave your message.
             </p>
 
         </div>
@@ -734,7 +739,7 @@
     <div class="row">
 
         <div class="eight columns">
-                        <!-- contact-warning -->
+            <!-- contact-warning -->
             {% with messages = get_flashed_messages() %}
             {% if messages %}
             {% for message in messages %}
@@ -744,46 +749,46 @@
             {% endwith %}
             {{render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
 
-<!--            &lt;!&ndash; form &ndash;&gt;-->
-<!--            <form action="" method="post" id="contactForm" name="contactForm">-->
-<!--                <fieldset>-->
+            <!--            &lt;!&ndash; form &ndash;&gt;-->
+            <!--            <form action="" method="post" id="contactForm" name="contactForm">-->
+            <!--                <fieldset>-->
 
-<!--                    <div>-->
-<!--                        <label for="contactName">Name <span class="required">*</span></label>-->
-<!--                        <input type="text" value="" size="35" id="contactName" name="contactName">-->
-<!--                    </div>-->
+            <!--                    <div>-->
+            <!--                        <label for="contactName">Name <span class="required">*</span></label>-->
+            <!--                        <input type="text" value="" size="35" id="contactName" name="contactName">-->
+            <!--                    </div>-->
 
-<!--                    <div>-->
-<!--                        <label for="contactEmail">Email <span class="required">*</span></label>-->
-<!--                        <input type="text" value="" size="35" id="contactEmail" name="contactEmail">-->
-<!--                    </div>-->
+            <!--                    <div>-->
+            <!--                        <label for="contactEmail">Email <span class="required">*</span></label>-->
+            <!--                        <input type="text" value="" size="35" id="contactEmail" name="contactEmail">-->
+            <!--                    </div>-->
 
-<!--                    <div>-->
-<!--                        <label for="contactSubject">Subject</label>-->
-<!--                        <input type="text" value="" size="35" id="contactSubject" name="contactSubject">-->
-<!--                    </div>-->
+            <!--                    <div>-->
+            <!--                        <label for="contactSubject">Subject</label>-->
+            <!--                        <input type="text" value="" size="35" id="contactSubject" name="contactSubject">-->
+            <!--                    </div>-->
 
-<!--                    <div>-->
-<!--                        <label for="contactMessage">Message <span class="required">*</span></label>-->
-<!--                        <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>-->
-<!--                    </div>-->
+            <!--                    <div>-->
+            <!--                        <label for="contactMessage">Message <span class="required">*</span></label>-->
+            <!--                        <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>-->
+            <!--                    </div>-->
 
-<!--                    <div>-->
-<!--                        <button class="submit">Submit</button>-->
-<!--                        <span id="image-loader">-->
-<!--                        <img alt="" src="images/loader.gif">-->
-<!--                     </span>-->
-<!--                    </div>-->
+            <!--                    <div>-->
+            <!--                        <button class="submit">Submit</button>-->
+            <!--                        <span id="image-loader">-->
+            <!--                        <img alt="" src="images/loader.gif">-->
+            <!--                     </span>-->
+            <!--                    </div>-->
 
-<!--                </fieldset>-->
-<!--            </form> &lt;!&ndash; Form End &ndash;&gt;-->
+            <!--                </fieldset>-->
+            <!--            </form> &lt;!&ndash; Form End &ndash;&gt;-->
 
 
-<!--            <div id="message-warning"> Error boy</div>-->
+            <!--            <div id="message-warning"> Error boy</div>-->
             <!-- contact-success -->
-<!--            <div id="message-success">-->
-<!--                <i class="fa fa-check"></i>Your message was sent, thank you!<br>-->
-<!--            </div>-->
+            <!--            <div id="message-success">-->
+            <!--                <i class="fa fa-check"></i>Your message was sent, thank you!<br>-->
+            <!--            </div>-->
 
         </div>
 
@@ -809,20 +814,23 @@
 
                 <ul id="twitter">
                     <li>
-                        <img class="profile-pic" src="https://scontent.ffjr1-1.fna.fbcdn.net/v/t39.30808-6/414332344_10161079397151357_818209435449156640_n.jpg?stp=dst-jpg_p843x403&_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=hjLRyQaCNbsAX8gbdYr&_nc_ht=scontent.ffjr1-1.fna&oh=00_AfDzk0F1tNbqCJ51Wy7Q75o3KvwVWvao5CaVkBJQ7yIUJg&oe=65A07595" alt=""/>
+                        <img class="profile-pic"
+                             src="https://scontent.ffjr1-1.fna.fbcdn.net/v/t39.30808-6/414332344_10161079397151357_818209435449156640_n.jpg?stp=dst-jpg_p843x403&_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=hjLRyQaCNbsAX8gbdYr&_nc_ht=scontent.ffjr1-1.fna&oh=00_AfDzk0F1tNbqCJ51Wy7Q75o3KvwVWvao5CaVkBJQ7yIUJg&oe=65A07595"
+                             alt=""/>
 
-<!--                        <span>-->
-<!--                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.-->
-<!--                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum-->
-<!--                        <a href="#">http://t.co/CGIrdxIlI3</a>-->
-<!--                        </span>-->
-<!--                        <b><a href="#">2 Days Ago</a></b>-->
+                        <!--                        <span>-->
+                        <!--                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.-->
+                        <!--                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum-->
+                        <!--                        <a href="#">http://t.co/CGIrdxIlI3</a>-->
+                        <!--                        </span>-->
+                        <!--                        <b><a href="#">2 Days Ago</a></b>-->
                     </li>
                     <li>
                         <span>
                             We are waiting for our first baby child 👪 to arrive safely! If you would like to send us a small gift, here is our Amazon baby registry;
 
-                        <a href="https://www.amazon.com/baby-reg/joseph-sadek-february-2024-dubai/3GOF3P5RD9WJ4?ref_=cm_sw_r_cp_ud_dp_NTJT8FQVE8MMYHWXDDQ5" target="_blank">http://Amazon.ae</a>
+                        <a href="https://www.amazon.com/baby-reg/joseph-sadek-february-2024-dubai/3GOF3P5RD9WJ4?ref_=cm_sw_r_cp_ud_dp_NTJT8FQVE8MMYHWXDDQ5"
+                           target="_blank">http://Amazon.ae</a>
                         </span>
                         <b><a href="#">Dec. 2023</a></b>
                     </li>
@@ -848,11 +856,14 @@
             <ul class="social-links">
                 <li><a href="https://www.facebook.com/J.V.Sadek" target="_blank"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="https://twitter.com/JosephSadek11" target="_blank"><i class="fa fa-twitter"></i></a></li>
-<!--                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
-                <li><a href="https://www.linkedin.com/in/sadekjoseph/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://www.instagram.com/JOSEPHSADEK/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://www.threads.net/@josephsadek" target="_blank"><i class="fa-brands fa-threads"></i></a></li>
-<!--                <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
+                <!--                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+                <li><a href="https://www.linkedin.com/in/sadekjoseph/" target="_blank"><i
+                        class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/JOSEPHSADEK/" target="_blank"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.threads.net/@josephsadek" target="_blank"><i class="fa-brands fa-threads"></i></a>
+                </li>
+                <!--                <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
             </ul>
 
             <ul class="copyright">
