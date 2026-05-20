@@ -72,7 +72,7 @@ def main_page():
 
 @app.route('/download')
 def download_resume():
-    return send_from_directory('static', path="./files/Resume-Joseph-Sadek_2024.pdf")
+    return send_from_directory('static', path="./files/Joseph_Sadek_Resume_2026.pdf")
 
 if __name__ == "__main__":
     app.run(debug=False, port=5001)
